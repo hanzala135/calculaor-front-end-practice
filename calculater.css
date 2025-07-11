@@ -1,8 +1,6 @@
-/* calculater.css */
-
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   font-family: Arial, sans-serif;
   background: linear-gradient(to right,#27313b, #adafb1);
   display: flex; 

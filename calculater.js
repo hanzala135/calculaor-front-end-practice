@@ -18,19 +18,19 @@ function calculate() {
   if (current_num === "" || previous_num === "" || operator === "") return;
   num1 = parseFloat(current_num);
   num2 = parseFloat(previous_num);
-  if (operator === "+") display.value = num1 + num2;
-  else if (operator === "-") display.value = num1 - num2;
+  if (operator === "+") display.value = num2 + num1;
+  else if (operator === "-") display.value = num2 - num1;
   else if (operator === "/") {
-    if (num2 === 0) {
+    if (num1 === 0) {
       display.value = "math error";
       clearDisplay();
       return;
-    } else display.value = num1 / num2;
+    } else display.value = num2 / num1;
   } else if (operator === "%") display.value = num1 % num2;
   else if (operator === "*") display.value = num1 * num2;
   let result = display.value;
-  currentNumber = result;
-  previousNumber = "";
+  current_num = result;
+  previous_num = "";
 }
 function clearDisplay() {
   current_num = "";
